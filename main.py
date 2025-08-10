@@ -37,8 +37,8 @@ class Car():
     def recolor(self, new_color):
         self.color = new_color
 
-    def tune(self, new_ps):
-        self.ps += new_ps
+    def tune(self, ps):
+        self.ps += ps
 
     def refuel(self):
         self.fuel = 100
