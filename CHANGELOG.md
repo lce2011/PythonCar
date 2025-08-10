@@ -14,3 +14,4 @@
 - Added three new colors to the 'Colors' enum
 - iPhone
 - Seperated 'V2' and 'V-twin'
+- Removed iPhone
