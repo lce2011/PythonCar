@@ -23,14 +23,16 @@ class Car():
             "y": 0,
             "z": 0,
         }
+        self.fuel = 100
 
     def __str__(self):
-        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}"
+        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}\nFuel: {self.fuel}%\n"
     
     def drive(self, x, y, z):
         self.position["x"] += x
         self.position["y"] += y
         self.position["z"] += z
+        self.fuel -= 5
 
     def recolor(self, new_color):
         self.color = new_color
@@ -38,10 +40,16 @@ class Car():
     def tune(self, new_ps):
         self.ps += new_ps
 
+    def refuel(self):
+        self.fuel = 100
+
 my_car = Car("Mercedes", 500, Colors.RED.value)
 print(my_car)
 
 my_car.drive(2, 3, 4)
 my_car.recolor(Colors.BLUE.value)
 my_car.tune(500)
+print(my_car)
+
+my_car.refuel()
 print(my_car)
