@@ -6,3 +6,5 @@
 - Added timestamp to CHANGELOG.md
 - Removed timestamp from CHANGELOG.md
 - Updated CHANGELOG.md file
+- Updated main.py file
+- Updated Repo
