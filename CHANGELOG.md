@@ -5,3 +5,4 @@
 - Added CHANGELOG.md file
 - Added timestamp to CHANGELOG.md
 - Removed timestamp from CHANGELOG.md
+- Updated CHANGELOG.md file
