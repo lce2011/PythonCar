@@ -3,3 +3,5 @@
 - Added README.md file
 - Added function 'refuel()' to class 'Car()'
 - Added CHANGELOG.md file
+- Added timestamp to CHANGELOG.md
+- Removed timestamp from CHANGELOG.md
