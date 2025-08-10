@@ -1,0 +1,47 @@
+from enum import Enum
+
+class Colors(Enum):
+    RED = "Red"
+    GREEN = "Green"
+    BLUE = "Blue"
+    ORANGE = "Orange"
+    PURPLE = "Purple"
+    YELLOW = "Yellow"
+    GRAY = "Gray"
+    WHITE = "White"
+    BLACK = "Black"
+    SILVER = "Silver"
+    GOLD = "Gold"
+
+class Car():
+    def __init__(self, brand, ps, color):
+        self.brand = brand
+        self.ps = ps
+        self.color = color
+        self.position = {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+        }
+
+    def __str__(self):
+        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}"
+    
+    def drive(self, x, y, z):
+        self.position["x"] += x
+        self.position["y"] += y
+        self.position["z"] += z
+
+    def recolor(self, new_color):
+        self.color = new_color
+
+    def tune(self, new_ps):
+        self.ps += new_ps
+
+my_car = Car("Mercedes", 500, Colors.RED.value)
+print(my_car)
+
+my_car.drive(2, 3, 4)
+my_car.recolor(Colors.BLUE.value)
+my_car.tune(500)
+print(my_car)
