@@ -13,3 +13,4 @@
 - Added new adjustmens for class 'Car()'
 - Added three new colors to the 'Colors' enum
 - iPhone
+- Seperated 'V2' and 'V-twin'

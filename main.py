@@ -19,7 +19,8 @@ class Colors(Enum):
 
 class EngineTypes(Enum):
     class VEngines(Enum):
-        V2 = "V2 (V-twin)"
+        V_TWIN = "V-twin"
+        V2 = "V2"
         V3 = "V3"
         V4 = "V4"
         V5 = "V5"
