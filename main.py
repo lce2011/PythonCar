@@ -30,12 +30,18 @@ class EngineTypes(Enum):
         V24 = "V24"
         V32 = "V32"
 
+class CarTypes(Enum):
+    KFZ = "KFZ (Motor Vehicle)"
+    PKW = "PKW (Car)"
+    LKW = "LKW (Truck)"
+
 class Car():
     def __init__(self, brand, ps, color):
         self.brand = brand
         self.ps = ps
         self.color = color
         self.engine = EngineTypes.VEngines.V8.value
+        self.type = CarTypes.PKW.value
         self.position = {
             "x": 0,
             "y": 0,
@@ -44,7 +50,7 @@ class Car():
         self.fuel = 100
 
     def __str__(self):
-        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nMotor-Type: {self.engine}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}\nFuel: {self.fuel}%\n"
+        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nMotor-Type: {self.engine}\nCar-Type: {self.type}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}\nFuel: {self.fuel}%\n"
     
     def drive(self, x, y, z):
         self.position["x"] += x
