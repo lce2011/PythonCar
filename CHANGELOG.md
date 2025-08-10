@@ -12,3 +12,4 @@
 - Added enum 'CarTypes'
 - Added new adjustmens for class 'Car()'
 - Added three new colors to the 'Colors' enum
+- iPhone
