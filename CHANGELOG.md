@@ -10,3 +10,4 @@
 - Updated REPO
 - Added enums 'EngineTypes' and 'VEngines'
 - Added enum 'CarTypes'
+- Added new adjustmens for class 'Car()'
