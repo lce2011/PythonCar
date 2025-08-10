@@ -8,3 +8,4 @@
 - Updated CHANGELOG.md file
 - Updated main.py file
 - Updated REPO
+- Added enums 'EngineTypes' and 'VEngines'

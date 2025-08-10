@@ -13,11 +13,29 @@ class Colors(Enum):
     SILVER = "Silver"
     GOLD = "Gold"
 
+class EngineTypes(Enum):
+    class VEngines(Enum):
+        V2 = "V2 (V-twin)"
+        V3 = "V3"
+        V4 = "V4"
+        V5 = "V5"
+        V6 = "V6"
+        V8 = "V8"
+        V10 = "V10"
+        V12 = "V12"
+        V14 = "V14"
+        V16 = "V16"
+        V18 = "V18"
+        V20 = "V20"
+        V24 = "V24"
+        V32 = "V32"
+
 class Car():
     def __init__(self, brand, ps, color):
         self.brand = brand
         self.ps = ps
         self.color = color
+        self.engine = EngineTypes.VEngines.V8.value
         self.position = {
             "x": 0,
             "y": 0,
@@ -26,7 +44,7 @@ class Car():
         self.fuel = 100
 
     def __str__(self):
-        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}\nFuel: {self.fuel}%\n"
+        return f"Brand: {self.brand}\nPS: {self.ps}\nColor: {self.color}\nMotor-Type: {self.engine}\nLocation:\n\tX: {self.position["x"]}\n\tY: {self.position["y"]}\n\tZ: {self.position["z"]}\nFuel: {self.fuel}%\n"
     
     def drive(self, x, y, z):
         self.position["x"] += x
