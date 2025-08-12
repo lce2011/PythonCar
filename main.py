@@ -1,3 +1,4 @@
+# Very important comment
 from enum import Enum
 
 class Colors(Enum):
