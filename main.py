@@ -1,4 +1,3 @@
-# Very important comment
 from enum import Enum
 
 class Colors(Enum):
@@ -34,6 +33,26 @@ class EngineTypes(Enum):
         V20 = "V20"
         V24 = "V24"
         V32 = "V32"
+    class InlineEngine(Enum):
+        I_TWIN = "I-twin"
+        I2 = "I2"
+        I3 = "I3"
+        I4 = "I4"
+        I5 = "I5"
+        I6 = "I6"
+        I7 = "I7"
+        I8 = "I8"
+        I9 = "I9"
+        I12 = "I12"
+        I14 = "I14"
+    class FlatEngine(Enum):
+        FLAT_TWIN = "Flat-twin"
+        FLAT_4 = "Flat-4"
+        FLAT_6 = "Flat-6"
+        FLAT_8 = "Flat-8"
+        FLAT_10 = "Flat-10"
+        FLAT_12 = "Flat-12"
+        FLAT_16 = "Flat-16"
 
 class CarTypes(Enum):
     KFZ = "KFZ (Motor Vehicle)"
